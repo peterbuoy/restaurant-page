@@ -2,9 +2,9 @@ import home from './home';
 import menu from './menu';
 import contact from './contact';
 import './style.css';
-import background from './assets/images/icecreamgirlwhitecho1.png';
-import bakaImage from './assets/images/baka.gif';
 import tsunScoopsIcon from './assets/images/tsun-scoops-logo.png';
+import backgroundGirl from './assets/images/icecreamgirlwhitecho1.png';
+import bakaImage from './assets/images/baka.gif';
 
 const createElementAndText = (tag, textContent) => {
   let element = document.createElement(`${tag}`);
@@ -12,24 +12,19 @@ const createElementAndText = (tag, textContent) => {
   return element;
 }
 
-// Footer Stuff (link, then img)
-const FOOTER = document.getElementById('footer');
-const FOOTER_LINK = document.createElement('a')
-FOOTER_LINK.href = 'https://tsunscoops.com/';
-FOOTER_LINK.textContent = "Original website";
-FOOTER.appendChild(FOOTER_LINK);
+// Top left corner icon
+let CORNER_LOGO = document.getElementById('corner_logo');
+CORNER_LOGO.src = tsunScoopsIcon;
+//console.log(CORNER_LOGO.src);
 
 // Background Image
-let footerBakaImage = new Image(40, 40);
-footerBakaImage.src = bakaImage;
-FOOTER.appendChild(footerBakaImage);
-const myIcon = new Image();
-myIcon.src = background;
-document.getElementById('body').appendChild(myIcon);
+const BODY = document.getElementById('body');
+BODY.style.background = `linear-gradient(#b2f5b932, #b2f5b932), url(${backgroundGirl}) no-repeat`
+BODY.style.backgroundSize = 'cover';
 
-// Top left corner icon
-let cornerIcon = document.createElement('img');
-cornerIcon.src = tsunScoopsIcon;
-cornerIcon.id = 'corner_icon';
-const NAV = document.getElementById('nav');
-NAV.prepend(cornerIcon);
+// Footer Stuff (link, then img)
+const FOOTER_LINK = document.getElementById('footer_link');
+const FOOTER_IMG = document.getElementById('footer_baka_img');
+FOOTER_LINK.href = 'https://tsunscoops.com/';
+FOOTER_LINK.textContent = "Official Site...";
+FOOTER_IMG.src = bakaImage;

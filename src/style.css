@@ -2,14 +2,25 @@ nav {
   display: flex;
   flex-direction: row;
   margin: auto;
+  gap: 15px;
   width: 40%;
   justify-content: space-evenly;
+  color: #fd5d90;
+  font-size: 50px;
+}
+
+#corner_logo {
+  position: fixed;
+  left: 15px;
+  height: 10vw;
+  max-height: 120px;
+  color: #b2f5b9b9;
 }
 
 #content {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
@@ -30,6 +41,7 @@ img {
   max-height: 100%;
 }
 
-#corner_icon {
-  height: 50px;
+#footer_baka_img {
+  height: 40px;
+  width: 40px;
 }
