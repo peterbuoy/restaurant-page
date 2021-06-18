@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 nav {
   display: flex;
   flex-direction: row;
@@ -6,14 +8,20 @@ nav {
   width: 40%;
   justify-content: space-evenly;
   color: #fd5d90;
-  font-size: 50px;
+  font-size: 110%;
+  font-family: 'Poppins';
+  text-underline-offset: 10px;
+}
+
+nav div:hover {
+  cursor: pointer;
 }
 
 #corner_logo {
   position: fixed;
   left: 15px;
   height: 10vw;
-  max-height: 120px;
+  max-height: 100px;
   color: #b2f5b9b9;
 }
 
@@ -45,4 +53,9 @@ img {
 #footer_baka_img {
   height: 40px;
   width: 40px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
 }
