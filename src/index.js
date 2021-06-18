@@ -1,6 +1,6 @@
 import home from './home';
 import menu from './menu';
-import contact from './contact';
+import {contactComponent} from './contact';
 import './style.css';
 import tsunScoopsIcon from './assets/images/tsun-scoops-logo.png';
 import backgroundGirl from './assets/images/icecreamgirlwhitecho1.png';
@@ -15,7 +15,6 @@ const createElementAndText = (tag, textContent) => {
 // Top left corner icon
 let CORNER_LOGO = document.getElementById('corner_logo');
 CORNER_LOGO.src = tsunScoopsIcon;
-//console.log(CORNER_LOGO.src);
 
 // Background Image
 const BODY = document.getElementById('body');
@@ -28,3 +27,6 @@ const FOOTER_IMG = document.getElementById('footer_baka_img');
 FOOTER_LINK.href = 'https://tsunscoops.com/';
 FOOTER_LINK.textContent = "Official Site...";
 FOOTER_IMG.src = bakaImage;
+
+const CONTACT_div = document.getElementById('div_contact')
+CONTACT_div.addEventListener('click', contactComponent);
