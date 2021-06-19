@@ -48,7 +48,6 @@ MENU.addEventListener('click', renderMenuComponent);
 CONTACT.addEventListener('click', renderContactComponent);
 
 
-renderHomeComponent();
 // Top left corner logo
 let CORNER_LOGO = document.getElementById('corner_logo');
 CORNER_LOGO.src = tsunScoopsIcon;
@@ -60,3 +59,6 @@ BODY.style.backgroundSize = 'cover';
 
 const FOOTER_IMG = document.getElementById('footer_baka_img');
 FOOTER_IMG.src = bakaImage;
+
+renderHomeComponent();
+BODY.style.display = 'block';

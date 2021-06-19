@@ -18,6 +18,10 @@ nav div:hover {
   cursor: pointer;
 }
 
+#body {
+	display: none;
+}
+
 #corner_logo {
   position: fixed;
   left: 15px;
