@@ -47,6 +47,8 @@ HOME.addEventListener('click', renderHomeComponent);
 MENU.addEventListener('click', renderMenuComponent);
 CONTACT.addEventListener('click', renderContactComponent);
 
+
+renderHomeComponent();
 // Top left corner logo
 let CORNER_LOGO = document.getElementById('corner_logo');
 CORNER_LOGO.src = tsunScoopsIcon;
