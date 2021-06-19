@@ -61,4 +61,5 @@ const FOOTER_IMG = document.getElementById('footer_baka_img');
 FOOTER_IMG.src = bakaImage;
 
 renderHomeComponent();
-BODY.style.display = 'block';
+
+setTimeout(BODY.style.display = 'block', 500);
