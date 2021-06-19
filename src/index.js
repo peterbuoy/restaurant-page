@@ -6,8 +6,7 @@ import tsunScoopsIcon from './assets/images/tsun-scoops-logo.png';
 import backgroundGirl from './assets/images/icecreamgirlwhitecho1.png';
 import bakaImage from './assets/images/baka.gif';
 
-
-
+const BODY = document.getElementById('body');
 const HOME = document.getElementById('div_home');
 const MENU = document.getElementById('div_menu')
 const CONTACT = document.getElementById('div_contact')
@@ -43,23 +42,21 @@ const renderContactComponent = () => {
   CONTENT.append(contactComponent());
 }
 
+renderHomeComponent();
+
 HOME.addEventListener('click', renderHomeComponent);
 MENU.addEventListener('click', renderMenuComponent);
 CONTACT.addEventListener('click', renderContactComponent);
-
 
 // Top left corner logo
 let CORNER_LOGO = document.getElementById('corner_logo');
 CORNER_LOGO.src = tsunScoopsIcon;
 
 // Background Image
-const BODY = document.getElementById('body');
 BODY.style.background = `linear-gradient(#b2f5b932, #b2f5b932), url(${backgroundGirl}) no-repeat`
 BODY.style.backgroundSize = 'cover';
 
 const FOOTER_IMG = document.getElementById('footer_baka_img');
 FOOTER_IMG.src = bakaImage;
 
-renderHomeComponent();
 
-setTimeout(BODY.style.display = 'block', 500);
