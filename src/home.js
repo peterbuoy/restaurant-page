@@ -14,9 +14,7 @@ const homeComponent = () => {
   topText.textContent = `Welcome to the tsun scoops SPA located in Hotel California.
 												Not like I care if you leave or anything.`
 	let bottomText = document.createElement('div');
-	let pinkContactText = createElementAndText('p', 'Contact');
-	pinkContactText.color = '#fd5d90';
-	bottomText.textContent = `You can view the original page at the link in the footer.
+	bottomText.textContent = `Original page is in the Footer below.
 														The sauce can be found in the Contact tab.`
   homeFragment.append(topText);
 	homeFragment.append(bottomText);
